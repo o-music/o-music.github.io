@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>George Zhao</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#39342D">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index.html">O, MUSIC!</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Header-->
+            <header class="py-5" style="background-color:#39342D">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-5 fw-bolder text-white mb-2">George Zhao</h1>
+                                <p class="lead fw-normal text-white-50 mb-4">GEORGE IS A <b style="color:#94352F">MUSICIAN</b> AND <b style="color:#94352F">PRIVATE MUSIC TEACHER</b>.</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="img/g.jpg" alt="..." /></div>
+                    </div>
+                </div>
+            </header>
+            <!-- section -->
+            <section class="py-5" id="about">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 mb-5 mb-lg-0"><h2 class="fw-bolder mb-0">ABOUT</h2></div>
+                        <div class="col-lg-8">
+							
+                            <div class="row gx-5 row-cols-1 row-cols-md-1">
+                                <div class="col mb-5 h-100">
+                                    <h2 class="h5">Qualifications</h2>
+                                    <p class="mb-0" align="justify">George is a graduate of Shenyang Conservatory of Music from China, and is a PhD candidate at Rhodes University in South Africa.</p>
+                                </div>
+                            </div>							
+                            <div class="row gx-5 row-cols-1 row-cols-md-2">
+                                <div class="col mb-5 h-100">
+                                    <h2 class="h5">ElectroAcoustic Music</h2>
+                                    <p class="mb-0" align="justify">George is a musician who creates and performs electroacoustic music. He was honored to have performed at Musicacoustica-Beijing Festival and Shanghai International Electroacoustic Music Week in China. He also had the privilege of performing at Canberra International Music Festival, National Multicultural Festival, and National Science Week in Australia, as well as performances at universities in the UK and US.</p>
+                                </div>
+                                <div class="col mb-5 h-100">
+                                    <h2 class="h5">Tuition</h2>
+                                    <p class="mb-0" align="justify">George is a instrumental music teacher who teaches students playing the piano and accordion, and deliveries comprehensive music education via private music tuition. He believes that learning music helps students to establish a positive character and a healthy self-image which will accompany them in their lifetime. He strives to be an inspiring music teacher and to bring happiness through music to his students.</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- section -->
+            <div class="py-5 bg-light" id="contact">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-10 col-xl-7">
+                            <div class="text-center">
+                                <div class="fs-4 mb-4 fst-italic">George can be reached by email at george@omusic.au.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- section -->
+            <section class="py-5" id="photos">
+                <div class="container px-5 my-5">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="row gx-5">
+                                <div class="col-12">
+                                    <div class="row gallery" id="image-grid">
+                                        <!-- Images will be dynamically generated here -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <script>
+            const folder = 'photos/';
+            const fileNames = [
+                'at_De_Montfort_University.jpg',
+                'dmu.jpg',
+                'gng.jpg',
+                'in_Light_Object.jpg',
+                'lake_ginninderra.jpg',
+                'me.jpg',
+                'mmexport1666430709296.jpg',
+                'mmexport1666430726901.jpg',
+                'russian.jpg',
+                'the_curious_feast.jpg',
+                'yellow.jpg',
+                'yellow2.jpg'
+            ];
+
+            // Shuffle the file names
+            for (let i = fileNames.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [fileNames[i], fileNames[j]] = [fileNames[j], fileNames[i]];
+            }
+
+            // Take the first 9 file names
+            const displayFileNames = fileNames.slice(0, 9);
+
+            // Generate the HTML for displaying the images
+            const imageHTML = displayFileNames.map(filename => `
+                <div class="col-md-4">
+                    <img src="${folder}${filename}" class="img-fluid">
+                </div>
+            `).join('');
+
+            // Insert the HTML into the page
+            document.getElementById('image-grid').innerHTML = imageHTML;
+            </script>
+
+            
+        </main>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        
+    </body>
+</html>
